@@ -1,20 +1,50 @@
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
 body{
     margin: 0;
     padding: 0;
-  
 }
+
 nav {
     margin:auto;
-    width:900px;
-    
+    width:1200px;
+    height: 100px;
+    top: 8px;
+
 }
+/*
+.nav-logo{
+    position: absolute;
+    top: 8px;
+    left:19px;
+    float: left;
+}
+*/
+
+.nav-logo{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.img-logo{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
 .liPrincipal {
     float: left;
 }
 /* saca las viñetas de las listas */
 ul, ol {
     list-style: none;
-  
+
 }
 
 nav li a {
@@ -27,6 +57,7 @@ nav li a {
 
 nav li a:hover {
     background-color: lightpink;
+    text-decoration: none;
 }
 
 
@@ -42,6 +73,7 @@ nav li:hover > ul  {
 
 nav li ul li {
     position: relative;
+    
 }
 nav li ul li ul{
     right: -140px;
@@ -49,3 +81,6 @@ nav li ul li ul{
 }
 
 /* slideShow*/
+
+
+
