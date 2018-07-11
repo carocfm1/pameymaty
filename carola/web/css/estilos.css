@@ -1,46 +1,45 @@
 
-html {
-    font-family: sans-serif;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%
-}
-body{
+html body{
     margin: 0;
     padding: 0;
 }
 
 nav {
     margin:auto;
-    width:1200px;
+    width:1600px;
     height: 100px;
     top: 8px;
-
+    z-index: 1;
+    font-family: Helvetica;
+    font-size: 25px;
+  
 }
-/*
+
 .nav-logo{
     position: absolute;
     top: 8px;
-    left:19px;
+    left:40px;
     float: left;
-}
-*/
-
-.nav-logo{
     display: inline-block;
     vertical-align: middle;
-    width: 70px;
+    width: 300px;
+    margin: -.5em auto;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.img-logo{
-  display: block;
-  width: 100%;
-  height: auto;
-}
 
+.logo-img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    
+}
 
 .liPrincipal {
     float: left;
 }
+
 /* saca las viñetas de las listas */
 ul, ol {
     list-style: none;
@@ -48,23 +47,26 @@ ul, ol {
 }
 
 nav li a {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: GREY;
     text-decoration: none;  /* saca los subrayados */
-    padding: 10px 15px;
+    padding: 30px 35px;
     display: block;
 }
 
 nav li a:hover {
-    background-color: lightpink;
+    background-color:#FCF2FA;
     text-decoration: none;
+    color: #DD0789;
 }
 
 
 li ul{
     display:none;
     position: absolute;
-    min-width: 140px;
+    min-width: 210px;
+    z-index: 1;
+    
 }
 
 nav li:hover > ul  {
@@ -74,10 +76,12 @@ nav li:hover > ul  {
 nav li ul li {
     position: relative;
     
+
 }
 nav li ul li ul{
-    right: -140px;
+    right: -330px;
     top:0px;
+    z-index: 1;
 }
 
 /* slideShow*/
