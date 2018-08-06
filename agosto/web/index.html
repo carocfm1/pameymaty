@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/agostoEstilos.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+
+        </header>
+        
+<section class="landing">
+  <div>
+    <img src="https://image.ibb.co/f4vhyS/logo.png" />
+    <p>A social network for developers</p>
+    <h1>Coming Soon</h1>
+    <div class="countdown"></div>
+  </div>
+</section>
+       
+
+        
+        <nav class="nav-pc">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="fecha.html">FECHA</a></li>
+                <li><a href="ceremonia.html">CEREMONIA</a></li>
+                <li><a href="fiesta.html">FIESTA</a></li>
+                <li><a href="regalo.html">REGALO</a></li>
+                <li><a href="musica.html">MUSICA A LA CARTA</a></li>
+            </ul>
+        </nav>
+        
+        
+        <script>
+            const countdown = document.querySelector('.countdown');
+
+// Set Launch Date (ms)
+const launchDate = new Date('Jan 1, 2019 13:00:00').getTime();
+
+// Update every second
+const intvl = setInterval(() => {
+  // Get todays date and time (ms)
+  const now = new Date().getTime();
+
+  // Distance from now and the launch date (ms)
+  const distance = launchDate - now;
+
+  // Time calculation
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display result
+  countdown.innerHTML = `
+  <div>${days}<span>Days</span></div> 
+  <div>${hours}<span>Hours</span></div>
+  <div>${mins}<span>Minutes</span></div>
+  <div>${seconds}<span>Seconds</span></div>
+  `;
+
+  // If launch date is reached
+  if (distance < 0) {
+    // Stop countdown
+    clearInterval(intvl);
+    // Style and output text
+    countdown.style.color = '#17a2b8';
+    countdown.innerHTML = 'Launched!';
+  }
+}, 1000);
+
+
+        </script>
+    </body>
+</html>
