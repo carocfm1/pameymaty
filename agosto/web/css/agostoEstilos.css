@@ -261,7 +261,7 @@ li a:hover:not(.active) {
     position: relative;
     top:800px;
     width: 100%;
-    background-color: yellow;
+    background-color: transparent;
     height: 300px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */

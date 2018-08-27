@@ -104,7 +104,7 @@ li a:hover:not(.active) {
     position: relative;
     top:80px;
     width: 100%;
-    background-color: yellow;
+    background-color: transparent;
     height: 100px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -123,7 +123,7 @@ li a:hover:not(.active) {
     position: relative;
     top:80px;
     width: 100%;
-    background-color: red;
+    background-color: transparent;
     height: 100px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -141,7 +141,7 @@ li a:hover:not(.active) {
     position: relative;
     top:80px;
     width: 100%;
-    background-color: red;
+    background-color: transparent;
     height: 100px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -159,7 +159,7 @@ li a:hover:not(.active) {
     position: relative;
     top:80px;
     width: 50%;
-    background-color: red;
+    background-color: transparent;
     height: 200px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -176,7 +176,7 @@ li a:hover:not(.active) {
     position: relative;
     top:80px;
     width: 50%;
-    background-color: red;
+    background-color: transparent;
     height: 200px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -201,7 +201,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
     position: relative;
     top:80px;
     width: 50%;
-    background-color: green;
+    background-color: transparent;
     height: 500px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -231,7 +231,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
     position: relative;
     top:80px;
     width: 50%;
-    background-color: pink;
+    background-color: transparent;
     height: 500px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -259,7 +259,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
     position: relative;
     top:80px;
     width: 100%;
-    background-color: green;
+    background-color: transparent;
     height: 500px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -286,7 +286,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
     position: relative;
     top:80px;
     width: 50%;
-    background-color: green;
+    background-color: transparent;
     height: 600px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -304,7 +304,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
     position: relative;
     top:80px;
     width: 50%;
-    background-color: green;
+    background-color: transparent;
     height: 600px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -368,7 +368,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
         position: relative;
         top:30px;
         width: 100%;
-        background-color: pink;
+        background-color: transparent;
         height: 100px;
         float: left;
         display: flex; /* me pone permite posicionar el div en el centro  */
@@ -386,7 +386,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
         position: relative;
         top:30px;
         width: 100%;
-        background-color: red;
+        background-color: transparent;
         height: 100px;
         float: left;
         display: flex; /* me pone permite posicionar el div en el centro  */
@@ -404,7 +404,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
         position: relative;
         top:30px;
         width: 100%;
-        background-color: red;
+        background-color: transparent;
         height: 100px;
         float: left;
         display: flex; /* me pone permite posicionar el div en el centro  */
@@ -425,7 +425,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
         position: relative;
         top:30px;
         width: 100%;
-        background-color: green;
+        background-color: transparent;
         height: 330px;
         float: left;
         display: flex; /* me pone permite posicionar el div en el centro  */
@@ -458,7 +458,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
         position: relative;
         top:30px;
         width: 100%;
-        background-color: blue;
+        background-color: transparent;
         height: 330px;
         float: left;
         display: flex; /* me pone permite posicionar el div en el centro  */
@@ -490,7 +490,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
         position: relative;
         top:30px;
         width: 100%;
-        background-color: violet;
+        background-color: transparent;
         height: 330px;
         float: left;
         display: flex; /* me pone permite posicionar el div en el centro  */
@@ -519,7 +519,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
     position: relative;
     top:80px;
     width: 100%;
-    background-color: red;
+    background-color: transparent;
     height: 100px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -536,7 +536,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
     position: relative;
     top:80px;
     width: 100%;
-    background-color: yellow;
+    background-color: transparent;
     height: 200px;
     float: left;
     display: none; /* me pone permite posicionar el div en el centro  */
@@ -551,7 +551,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
     position: relative;
     top:80px;
     width: 100%;
-    background-color: green;
+    background-color: transparent;
     height: 600px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -569,7 +569,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
    position: relative;
     top:80px;
     width: 100%;
-    background-color: yellow;
+    background-color: transparent;
     height: 200px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -587,7 +587,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
   position: relative;
     top:80px;
     width: 100%;
-    background-color: blueviolet;
+    background-color: transparent;
     height: 600px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */

@@ -5,58 +5,179 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/estiloFecha.css" rel="stylesheet" type="text/css"/>
-    </head>
+
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estiloFecha.css" rel="stylesheet" type="text/css"/>
+
+
+
+
     <body>
 
-        <div class="background-fecha">
+
+
+
+
+        <div class="menu">
+            <input id="toggle" type="checkbox"/>
+            <label for="toggle" class="drop">
+                <svg width="36px" height="36px" viewBox="0 0 48 48"><path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path></svg>
+            </label >
+
+            <img class="img-CompartiTusFotos" src="imagenes/CompartiTusFotos.png" alt=""/>
+
 
             
+            <div class="slideshow-container">
 
-            <div class="menu">
-                <input id="toggle" type="checkbox"/>
-                <label for="toggle" class="drop">
-                    <svg width="36px" height="36px" viewBox="0 0 48 48"><path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path></svg>
-                </label >
+                <div class="mySlides fade">
+                    <img class="imgFecha" src="imagenes/yalosabias-01.png" alt=""/>  
+                </div>
 
-                <img class="img-CompartiTusFotos" src="imagenes/CompartiTusFotos.png" alt=""/>
+                <div class="mySlides fade">
+                    <img class="imgFecha" src="imagenes/FechaAgosto.jpg" alt=""/>
+                </div>
+               
+
+                <div class="dot-nav">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>              
+            </div>   
 
 
-                
-                <div class="w3-content w3-display-container">
-  <img class="mySlides" src="img_snowtops.jpg" style="width:100%">
-  <img class="mySlides" src="img_lights.jpg" style="width:100%">
-  <img class="mySlides" src="img_mountains.jpg" style="width:100%">
-  <img class="mySlides" src="img_forest.jpg" style="width:100%">
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-  
-  
-  
-  
-  
-  
-  
-</div>
-                
 
-                <nav class="nav-pc">
-                    <ul>
-                        <li><a href="index.html">INICIO</a></li>
-                        <li><a href="fecha.html">FECHA</a></li>
-                        <li><a href="ceremonia.html">CEREMONIA</a></li>
-                        <li><a href="fiesta.html">FIESTA</a></li>
-                        <li><a href="padrinos.html">PADRINOS</a></li>
-                        <li><a href="info.html">+INFO</a></li>
-                    </ul>
-                </nav>
 
+
+
+
+            <div style="text-align:center">
+
+
+                <h2>Encontrá tu foto</h2>
+                <p>Hacé click en la imagen</p>
             </div>
+
+            <div class="container">
+                <span onclick="this.parentElement.style.display = 'none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+            </div>
+
+
+
+
+
+            <!-- The four columns -->
+            <div class="row">
+                <div class="column">
+
+                    <img src="imagenes/f-20180505_185414.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="imagenes/f-20180513_153220.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="imagenes/f-20180516_234657.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="imagenes/f-20180520_025412.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+
+                    <img src="imagenes/f-20180527_150123.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="imagenes/f-20180610_012132.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="imagenes/f-20180610_171500.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="imagenes/f-20180610_231855.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <nav class="nav-pc">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="fecha.html">FECHA</a></li>
+                    <li><a href="ceremonia.html">CEREMONIA</a></li>
+                    <li><a href="fiesta.html">FIESTA</a></li>
+                    <li><a href="padrinos.html">PADRINOS</a></li>
+                    <li><a href="info.html">+INFO</a></li>
+                </ul>
+            </nav>
+
         </div>
+
+
+        <script>
+
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+
+
+
+
+            function myFunction(imgs) {
+                var expandImg = document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgtext");
+                expandImg.src = imgs.src;
+                imgText.innerHTML = imgs.alt;
+                expandImg.parentElement.style.display = "block";
+            }
+
+
+
+
+
+        </script>
+
     </body>
 </html>

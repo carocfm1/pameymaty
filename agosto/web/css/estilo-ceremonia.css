@@ -31,7 +31,7 @@ body {
     position: relative;
     top:800px;
     width: 50%;
-    background-color: yellow;
+    background-color: transparent;
     height: 580px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -60,7 +60,7 @@ body {
     position: relative;
     top:800px;
     width: 50%;
-    background-color: white;
+    background-color: transparent;
     height: 580px;
     float: right;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -72,7 +72,7 @@ body {
     position: relative;
     top:800px;
     width: 50%;
-    background-color: green;
+    background-color: transparent;
     height: 580px;
     float: left;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -102,7 +102,7 @@ body {
     position: relative;
     top:800px;
     width: 50%;
-    background-color: red;
+    background-color: transparent;
     height: 580px;
     float: right;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -245,7 +245,7 @@ li a:hover:not(.active) {
 
     .contedorTextoCivil {
         position:relative;
-        background-color: white;
+        background-color: transparent;
         border: 0 none;
         width: 100%;   
         margin:0;
@@ -280,7 +280,7 @@ li a:hover:not(.active) {
     
     .contedorTextoIglesia{
         position:relative;
-        background-color: red;
+        background-color: transparent;
         border: 0 none;
         width: 100%;   
         margin:0;

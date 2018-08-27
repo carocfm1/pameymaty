@@ -93,7 +93,7 @@ li a:hover:not(.active) {
     position: relative;
     top:100px;
     width: 100%;
-    background-color: white;
+    background-color: transparent;
     height: auto;
     float: right;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -112,7 +112,7 @@ li a:hover:not(.active) {
     position: relative;
     top:150px;
     width: 100%;
-    background-color: white;
+    background-color: transparent;
     height: auto;
     float: right;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -131,7 +131,7 @@ li a:hover:not(.active) {
     position: relative;
     top:150px;
     width: 100%;
-    background-color: pink;
+    background-color: transparent;
     height: auto;
     float: right;
     display: flex; /* me pone permite posicionar el div en el centro  */
@@ -205,7 +205,7 @@ li a:hover:not(.active) {
     
     .contenedor-TextoRegalo {
         position:relative;
-        background-color: white;
+        background-color: transparent;
         border: 0 none;
         width: 100%;   
         margin:0;
@@ -227,7 +227,7 @@ li a:hover:not(.active) {
     
     .contenedor-TextoRSVP {
         position:relative;
-        background-color: white;
+        background-color: transparent;
         border: 0 none;
         width: 100%;   
         margin:0;
@@ -249,7 +249,7 @@ li a:hover:not(.active) {
     
     .contenedor-TextoPlaylist {
         position:relative;
-        background-color: white;
+        background-color: transparent;
         border: 0 none;
         width: 100%;   
         margin:0;
