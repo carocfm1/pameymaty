@@ -40,64 +40,6 @@ body {
 }
 
 
-
-
-/* nav */
-
-.nav-pc{
-    background-color: #FFCFCA;
-    margin: 0 auto;
-    padding: 0px;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    height: auto;
-
-}
-ul{
-    list-style-type: none;
-    margin-top: 0;
-
-}
-li{
-    float: left;
-    font-family: Helvetica;
-    font-size: 15px; 
-    width: 15%;
-
-}
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding:14px 16px ;
-    text-decoration: none;
-}
-li a:hover:not(.active) {
-    background-color: lightgray;
-}
-
-.active {
-    background-color: #4CAF50;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-/*botón*/
-
-.menu .drop {
-    z-index:1;
-    position: fixed;
-    right: 10px;
-    color: #FFCFCA ;
-    padding: 0;
-    background: rgba(0,0,0,0.5);
-    cursor: pointer;
-    display: none; /*ocultamos el botón*/
-}
 .menu .drop svg {
     background: rgba(0,0,0,0.5);
     vertical-align: middle;
@@ -105,64 +47,38 @@ li a:hover:not(.active) {
 
 
 
-
-
-
-/*pure css*/
-
-.menu input {display: none}/*ocultamos el input*/
-#toggle:checked ~ .nav-pc {
-    display: block;
-
-}
-#toggle:checked ~ label{
-    background: rgba(0,0,0,0.65);
-
-}
-
-
-
-
-
 .mySlides {display:none}
 
 /* Slideshow container */
 .slideshow-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding:0;
     display: flex; /* me pone permite posicionar el div en el centro  */
     justify-content: center;/* me pone permite posicionar el div en el centro  */
     align-items: center;/* me pone permite posicionar el div en el centro  */
+    margin: 0;
+    padding: 0;
+    background-repeat:no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 
 }
 
 
-.imgFecha{
+.slideshow-container > .mySlides > .imgFecha{
+    background-repeat:no-repeat;
     position: relative;
-    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
     height: 100vh;
 }
 
-.imgFecha1{
-    position: relative;
-    width: 100%;
+.slideshow-container > .mySlides > .imgFecha2{
     height: 100vh;
+    background-size: cover;
 }
-
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
 
 
 /* The dots/bullets/indicators */
@@ -207,6 +123,11 @@ li a:hover:not(.active) {
     position: absolute;
     bottom: 50px;
     text-align: center;
+}
+
+.imgBuscaTuFoto{
+    width: 60%;
+
 }
 
 
@@ -274,50 +195,11 @@ li a:hover:not(.active) {
         width: 100%;
         height: 100vh;
     }
-    .menu {
-        margin: 0px;
-        padding: 0px;
-        position: relative;
-        top:0px;
-        width: 100%;
 
-    }
-    .menu .drop {display: inline-block;
-
-
-
-    }/*volvemos a mostrar el botón*/
-    .menu .nav-pc  {/*ahora nuestro menú es una lista flotante*/
-
-        z-index: 600;
-        background: black;
-        min-width: 10rem;
-        display: none;
-        top: 35px;
-        left: 0px;
-        height: 270px;
-    }
-
-    .menu .nav-pc > ul   {    /*y los ítems se alinean verticalmente*/
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-        height: 10%;
-    }
-    .menu .nav-pc > ul >li  {    /*y los ítems se alinean verticalmente*/
-        display: block;
-        float: none;
-        border: 0 none;
-        width: 100%;
+    .imgBuscaTuFoto{
+        width: 80%;
 
     }
 
-    .menu .drop svg path{
-        fill: white;
-
-    }
-
-
-    
 
 }

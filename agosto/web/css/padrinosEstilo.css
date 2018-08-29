@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 body {
-    background-color: #FBFBE7;
+    background-color: #FAFAE7;
     width: 100%;
     overflow: scroll;
     height: 1500px;
@@ -19,62 +19,6 @@ body {
     
 }
 
-/* nav */
-
-.nav-pc{
-    background-color: #FFCFCA;
-    margin: 0 auto;
-    padding: 0px;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    height: auto;
-}
-ul{
-    list-style-type: none;
-    margin-top: 0;
-}
-li{
-    float: left;
-    font-family: Helvetica;
-    font-size: 15px; 
-    width: 15%;
-}
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding:14px 16px ;
-    text-decoration: none;
-}
-li a:hover:not(.active) {
-    background-color: lightgray;
-}
-
-.active {
-    background-color: #4CAF50;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-/*botón*/
-
-.menu .drop {
-    position: fixed;
-    right: 10px;
-    color: #FFCFCA ;
-    padding: 0;
-    background: rgba(0,0,0,0.5);
-    cursor: pointer;
-    display: none; /*ocultamos el botón*/
-}
-.menu .drop svg {
-    background: rgba(0,0,0,0.5);
-    vertical-align: middle;
-}
 
 .img-CompartiTusFotos{
     z-index: auto;
@@ -84,15 +28,6 @@ li a:hover:not(.active) {
     left: 5%;
 }
 
-/*pure css*/
-
-.menu input {display: none}/*ocultamos el input*/
-#toggle:checked ~ .nav-pc {
-    display: block;
-}
-#toggle:checked ~ label{
-    background: rgba(0,0,0,0.65);
-}
 
 .espacio{
     width: 100%;
@@ -116,7 +51,7 @@ li a:hover:not(.active) {
 .contenedor-Titulos > .titulo{
     position: relative;
     display: block;
-    width: 40%;
+    width: 30%;
 }
 
 .contenedor-TitulosIglesia{
@@ -134,7 +69,7 @@ li a:hover:not(.active) {
 .contenedor-TitulosIglesia > .tituloIglesia{
     position: relative;
     display: block;
-    width: 40%;
+    width: 20%;
 }
 
 .contenedor-TitulosCivil{
@@ -152,7 +87,7 @@ li a:hover:not(.active) {
 .contenedor-TitulosCivil > .tituloCivil{
     position: relative;
     display: block;
-    width: 40%;
+    width: 20%;
 }
 
 .contenedor-TitDamas{
@@ -187,7 +122,8 @@ li a:hover:not(.active) {
 .contenedor-TitCab > .tituloCab{
     position: relative;
     display: block;
-    width: 60%;
+    width: 50%;
+ bottom: 0;
 }
 
 .contenedor-TitCab2{
@@ -321,44 +257,7 @@ display: none; /* me pone permite posicionar el div en el centro  */
 
 
 @media only screen and (max-width: 768px) {
-    .menu {
-        margin: 0px;
-        padding: 0px;
-        position: relative;
-        top:0px;
-        width: 100%;
-    }
-
-    .menu .drop {display: inline-block;}/*volvemos a mostrar el botón*/
-
-    .menu .nav-pc  {/*ahora nuestro menú es una lista flotante*/
-        z-index: 600;
-        background: black;
-        min-width: 10rem;
-        display: none;
-        top: 35px;
-        left: 0px;
-        height: 270px;
-    }
-
-    .menu .nav-pc > ul   {    /*y los ítems se alinean verticalmente*/
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-        height: 10%;
-    }
-
-    .menu .nav-pc > ul >li  {    /*y los ítems se alinean verticalmente*/
-        display: block;
-        float: none;
-        border: 0 none;
-        width: 100%;
-    }
-
-    .menu .drop svg path{
-        fill: white;
-    }
-
+    
     .div-header{
         display:none;
     }
@@ -601,8 +500,5 @@ display: none; /* me pone permite posicionar el div en el centro  */
     width: 80%;
 
 }
-
-
-
 
 }

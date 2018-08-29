@@ -18,68 +18,8 @@ body {
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-/* nav */
-
-.nav-pc{
-    background-color: #FFCFCA;
-    margin: 0 auto;
-    padding: 0px;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    height: auto;
-
-}
-ul{
-    list-style-type: none;
-    margin-top: 0;
-
-}
-li{
-    float: left;
-    font-family: Helvetica;
-    font-size: 15px; 
-    width: 15%;
-
-}
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding:14px 16px ;
-    text-decoration: none;
-}
-li a:hover:not(.active) {
-    background-color: lightgray;
-}
-
-.active {
-    background-color: #4CAF50;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-/*botón*/
-
-.menu .drop {
-    position: fixed;
-    right: 10px;
-    color: #FFCFCA ;
-    padding: 0;
-    background: rgba(0,0,0,0.5);
-    cursor: pointer;
-    display: none; /*ocultamos el botón*/
-}
-.menu .drop svg {
-    background: rgba(0,0,0,0.5);
-    vertical-align: middle;
-}
-
 .img-CompartiTusFotos{
-    z-index: auto;
+    z-index: 1;
     width:18%;
     position: absolute;
     top:3.5%;
@@ -91,10 +31,8 @@ li a:hover:not(.active) {
 
 .contenedor-TextoRegalo{
     position: relative;
-    top:100px;
+    height:40em;
     width: 100%;
-    background-color: transparent;
-    height: auto;
     float: right;
     display: flex; /* me pone permite posicionar el div en el centro  */
     justify-content: center;/* me pone permite posicionar el div en el centro  */
@@ -103,17 +41,17 @@ li a:hover:not(.active) {
 
 .contenedor-TextoRegalo > .img-TextoRegalo {
     position: relative;
+    top:1em;
     display: block;
-    width: 30%;
+    width: 25%;
 
 }
 
 .contenedor-TextoRSVP{
     position: relative;
-    top:150px;
     width: 100%;
-    background-color: transparent;
-    height: auto;
+    background-color: yellow;
+    height: 28em;
     float: right;
     display: flex; /* me pone permite posicionar el div en el centro  */
     justify-content: center;/* me pone permite posicionar el div en el centro  */
@@ -121,39 +59,61 @@ li a:hover:not(.active) {
 }
 
 .contenedor-TextoRSVP > .img-TextoRSVP {
-    position: relative;
+    position: absolute;
     display: block;
-    width: 30%;
+    width: 27%;
+    top:0px;
 
 }
 
-.contenedor-TextoPlaylist{
-    position: relative;
-    top:150px;
-    width: 100%;
-    background-color: transparent;
-    height: auto;
-    float: right;
+.contenedor-TextoRSVP > a {
     display: flex; /* me pone permite posicionar el div en el centro  */
     justify-content: center;/* me pone permite posicionar el div en el centro  */
     align-items: center;/* me pone permite posicionar el div en el centro  */
 }
-.contenedor-TextoPlaylist > .img-TextoPlaylist{
+
+.contenedor-TextoRSVP > a > .sobre{
+    position: absolute;
+    bottom:8%;
+    width: 5%;
+    right: 45%;
+}
+
+.contenedor-TextoRSVP > a > .whatsapp{
+    position: absolute;
+    bottom:8%;
+    left: 45%;
+    width: 3.8%;
+}
+
+.contenedor-TextoPlaylist{
     position: relative;
+    width: 100%;
+    background-color:green;
+    height: 25em;
+    float: right;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+}
+.contenedor-TextoPlaylist > .img-TextoPlaylist{
+    position: absolute;
     display: block;
-    width: 30%;
+    width: 27%;
+    top:0px;
 }
-/*pure css*/
 
-.menu input {display: none}/*ocultamos el input*/
-#toggle:checked ~ .nav-pc {
-    display: block;
-
+.contenedor-TextoPlaylist > a{
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
 }
-#toggle:checked ~ label{
-    background: rgba(0,0,0,0.65);
 
+.contenedor-TextoPlaylist > a > .hit{
+    position: absolute;
+    bottom:20%;
+    width: 18%;
 }
+
 
 .espacio{
     width: 100%;
@@ -161,92 +121,83 @@ li a:hover:not(.active) {
 }
 
 @media only screen and (max-width: 768px) {
-    .menu {
-        margin: 0px;
-        padding: 0px;
-        position: relative;
-        top:0px;
-        width: 100%;
-    }
-
-    .menu .drop {display: inline-block;}/*volvemos a mostrar el botón*/
-
-    .menu .nav-pc  {/*ahora nuestro menú es una lista flotante*/
-        z-index: 600;
-        background: black;
-        min-width: 10rem;
-        display: none;
-        top: 35px;
-        left: 0px;
-        height: 270px;
-    }
-
-    .menu .nav-pc > ul   {    /*y los ítems se alinean verticalmente*/
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-        height: 10%;
-    }
-
-    .menu .nav-pc > ul >li  {    /*y los ítems se alinean verticalmente*/
-        display: block;
-        float: none;
-        border: 0 none;
-        width: 100%;
-    }
-
-    .menu .drop svg path{
-        fill: white;
-    }
-
-    .div-header{
-        display:none;
+    body{
+        height: auto;
     }
     
+    .img-CompartiTusFotos{
+    z-index: 1;
+    width:40%;
+    position: absolute;
+    top:0.8em;
+    left:5%;
+}
+
+
     .contenedor-TextoRegalo {
         position:relative;
-        background-color: transparent;
+        top:2em;
+        background-color: yellow;
         border: 0 none;
         width: 100%;   
         margin:0;
         padding:0;
         float:left;
-        height: 580px;
+        height: 32em;
         display: flex;/* me pone permite posicionar el div en el centroHAY QUE PONERSELO AL PADRE Y SE CENTRA EL HIJO  */
         justify-content: center;/* me pone permite posicionar el div en el centro  */
         align-items: center;/* me pone permite posicionar el div en el centro  */
 
     }
-    
+
+
     .contenedor-TextoRegalo > .img-TextoRegalo {
         position: absolute;
         top:0px;
         width: 80%;
         height: auto;
     }
-    
+
+
+
     .contenedor-TextoRSVP {
         position:relative;
-        background-color: transparent;
+        background-color: violet;
         border: 0 none;
         width: 100%;   
         margin:0;
         padding:0;
         float:left;
-        height: 580px;
+        height: 27em;
         display: flex;/* me pone permite posicionar el div en el centroHAY QUE PONERSELO AL PADRE Y SE CENTRA EL HIJO  */
         justify-content: center;/* me pone permite posicionar el div en el centro  */
         align-items: center;/* me pone permite posicionar el div en el centro  */
 
     }
-    
+
     .contenedor-TextoRSVP > .img-TextoRSVP {
         position: absolute;
         top:0px;
         width: 80%;
-        height: auto;
+
     }
-    
+    .contenedor-TextoRSVP > a > .sobre{
+        position: absolute;
+        width: 18%;
+        bottom:15%;
+        right: 32%;
+
+
+    }
+
+    .contenedor-TextoRSVP > a > .whatsapp{
+        position: absolute;
+        bottom:15%;
+        left: 32%;
+        width: 14%;
+    }
+
+
     .contenedor-TextoPlaylist {
         position:relative;
         background-color: transparent;
@@ -255,17 +206,26 @@ li a:hover:not(.active) {
         margin:0;
         padding:0;
         float:left;
-        height: 580px;
+        height: 27em;
         display: flex;/* me pone permite posicionar el div en el centroHAY QUE PONERSELO AL PADRE Y SE CENTRA EL HIJO  */
         justify-content: center;/* me pone permite posicionar el div en el centro  */
         align-items: center;/* me pone permite posicionar el div en el centro  */
 
     }
-    
+
     .contenedor-TextoPlaylist > .img-TextoPlaylist {
         position: absolute;
         top:0px;
         width: 80%;
         height: auto;
     }
+
+.contenedor-TextoPlaylist > a > .hit{
+    position: absolute;
+    bottom:40%;
+    width: 48%;
+}
+
+
+
 }
