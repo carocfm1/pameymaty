@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Nos casamos!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/NavEstilo.css" rel="stylesheet" type="text/css"/>
+        <link href="css/inicioEstilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <div class="background-inicio">
+            <div class="countdown"></div>
+            <div class="menu">
+                <input id="toggle" type="checkbox"/>
+                <label for="toggle" class="drop">
+                    <svg width="36px" height="36px" viewBox="0 0 48 48"><path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path></svg>
+                </label >
+                <a href="https://www.facebook.com"><img class="img-CompartiTusFotos" src="imagenes/CompartiTusFotos.png" alt=""/></a>
+
+                <div class="textoInicio">
+                    <img class="img-textoInicio" src="imagenes/texto inicio.png" alt="" />
+                </div>
+                
+                
+
+                <nav class="nav-pc">
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="fecha.html">FECHA</a></li>
+                        <li><a href="ceremonia.html">CEREMONIA</a></li>
+                        <li><a href="fiesta.html">FIESTA</a></li>
+                        <li><a href="padrinos.html">PADRINOS</a></li>
+                        <li><a href="info.html">+INFO</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <script>
+            const countdown = document.querySelector('.countdown');
+
+            // Set Launch Date (ms)
+            const launchDate = new Date('Oct 20, 2018 13:00:00').getTime();
+
+            // Update every second
+            const intvl = setInterval(() => {
+                // Get todays date and time (ms)
+                const now = new Date().getTime();
+
+                // Distance from now and the launch date (ms)
+                const distance = launchDate - now;
+
+                // Time calculation
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor(
+                        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                        );
+                const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display result
+                countdown.innerHTML = `
+    <div>${days}<span>Days</span></div> 
+    <div>${hours}<span>Hours</span></div>
+    <div>${mins}<span>Minutes</span></div>
+    <div>${seconds}<span>Seconds</span></div>
+    `;
+
+                // If launch date is reached
+                if (distance < 0) {
+                    // Stop countdown
+                    clearInterval(intvl);
+                    // Style and output text
+                    countdown.style.color = '#17a2b8';
+                    countdown.innerHTML = 'Launched!';
+                }
+            }, 1000);
+        </script>
+    </body>
+</html>
