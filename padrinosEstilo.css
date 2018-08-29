@@ -1,0 +1,464 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/08/2018, 18:33:48
+    Author     : Caro
+*/
+
+body {
+    background-color: #FAFAE7;
+    width: 100%;
+    overflow: scroll;
+    height: 2000px;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+
+
+.img-CompartiTusFotos{
+    z-index: auto;
+    width:18%;
+    position: absolute;
+    top:3.5%;
+    left: 5%;
+}
+
+
+.espacio{
+    width: 100%;
+    height:100px;
+}
+
+/*Titulos*/
+.contenedor-Titulos{
+    position: relative;
+    top:80px;
+    width: 100%;
+    background-color: transparent;
+    height: 100px;
+    float: left;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+    display: none;
+}
+
+.contenedor-Titulos > .titulo{
+    position: relative;
+    display: block;
+    width: 30%;
+}
+
+.contenedor-TitulosIglesia{
+    position: relative;
+    top:80px;
+    width: 100%;
+    background-color: transparent;
+    height: 100px;
+    float: left;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+.contenedor-TitulosIglesia > .tituloIglesia{
+    position: relative;
+    display: block;
+    width: 20%;
+}
+
+.contenedor-TitulosCivil{
+    position: relative;
+    top:80px;
+    width: 100%;
+    background-color: transparent;
+    height: 100px;
+    float: left;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+.contenedor-TitulosCivil > .tituloCivil{
+    position: relative;
+    display: block;
+    width: 20%;
+}
+
+.contenedor-TitDamas{
+    position: relative;
+    top:80px;
+    width: 50%;
+    background-color: transparent;
+    height: 200px;
+    float: left;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+.contenedor-TitDamas > .tituloDamas{
+    position: relative;
+    display: block;
+    width: 60%;
+}
+.contenedor-TitCab{
+    position: relative;
+    top:80px;
+    width: 50%;
+    background-color: transparent;
+    height: 200px;
+    float: left;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+.contenedor-TitCab > .tituloCab{
+    position: relative;
+    display: block;
+    width: 50%;
+    bottom: 0;
+}
+
+.contenedor-TitCab2{
+    display: none; /* me pone permite posicionar el div en el centro  */
+}
+
+
+/*padrinos Pame*/
+
+.contenedor-PadrinosIglesia-Pame{
+    position: relative;
+    top:80px;
+    width: 50%;
+    background-color: transparent;
+    height: 500px;
+    float: left;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+.contenedor-PadrinosIglesia-Pame > .padrinosPame{
+    position: relative;
+    display: block;
+    width: 80%;
+    text-align: center;
+}
+
+.contenedor-PadrinosIglesia-Pame > p {
+    position: absolute;
+    display: flex;
+    width: 80%;
+    bottom: 10px;
+    text-align: center;
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+/*padrinos Maty*/
+.contenedor-PadrinosIglesia-Maty{
+    position: relative;
+    top:80px;
+    width: 50%;
+    background-color: transparent;
+    height: 500px;
+    float: left;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */    
+}
+
+.contenedor-PadrinosIglesia-Maty > .padrinosMaty{
+    position: relative;
+    display: block;
+    width: 80%;
+}
+
+.contenedor-PadrinosIglesia-Maty > p {
+    position: absolute;
+    display: flex;
+    width: 80%;
+    bottom: 10px;
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+
+.contenedor-PadrinosCivil{
+    position: relative;
+    top:80px;
+    width: 100%;
+    background-color: transparent;
+    height: 500px;
+    float: left;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+.contenedor-PadrinosCivil >  .padrinosCivil{
+    position: relative;
+    display: block;
+    width: 40%;
+}
+
+.contenedor-PadrinosCivil > p {
+    position: absolute;
+    display: flex;
+    width: 80%;
+    bottom: 10px;
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+.contenedor-Damas{
+    position: relative;
+    top:80px;
+    width: 50%;
+    background-color: transparent;
+    height: 600px;
+    float: left;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+.contenedor-Damas >  .ImgDamas{
+    position: relative;
+    display: block;
+    width: 65%;
+}
+
+.contenedor-Cab{
+    position: relative;
+    top:80px;
+    width: 50%;
+    background-color: transparent;
+    height: 600px;
+    float: left;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+.contenedor-Cab >  .ImgCab{
+    position: relative;
+    display: block;
+    width: 52%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .img-CompartiTusFotos{
+        z-index: 1;
+        width:40%;
+        position: absolute;
+        top:1.0em;
+        left: 1.5em;
+    }
+
+
+    /*Titulos*/
+    .contenedor-Titulos{
+        position: relative;
+        top:4em;
+        width: 100%;
+        height: 5em;
+        float: left;
+        display: none; /* me pone permite posicionar el div en el centro  */
+        justify-content: center;/* me pone permite posicionar el div en el centro  */
+        align-items: center;/* me pone permite posicionar el div en el centro  */
+    }
+
+    .contenedor-Titulos > .titulo{
+        position: absolute;
+        display: block;
+        width: 80%;
+    }
+
+    .contenedor-TitulosIglesia {
+        position: relative;
+        width: 100%;
+        height: 4em;
+        float: left;
+        top:5em;
+        display: flex; /* me pone permite posicionar el div en el centro  */
+        justify-content: center;/* me pone permite posicionar el div en el centro  */
+        align-items: center;/* me pone permite posicionar el div en el centro  */
+    }
+
+    .contenedor-TitulosIglesia > .tituloIglesia{
+        position: relative;
+        display: block;
+        width: 50%;
+
+    }
+
+    .contenedor-TitulosCivil {
+        position: relative;
+        top:37em;
+        width: 100%;
+        height: auto;
+        float: left;
+        display: flex; /* me pone permite posicionar el div en el centro  */
+        justify-content: center;/* me pone permite posicionar el div en el centro  */
+        align-items: center;/* me pone permite posicionar el div en el centro  */
+    }
+
+    .contenedor-TitulosCivil > .tituloCivil{
+        position: relative;
+        display: block;
+        width: 45%;
+    }
+
+
+    /*padrinos Pame*/
+
+    .contenedor-PadrinosIglesia-Pame{
+        position: relative;
+        top:6em;
+        width: 100%;
+        height: auto;
+        float: left;
+        display: flex; /* me pone permite posicionar el div en el centro  */
+        justify-content: center;/* me pone permite posicionar el div en el centro  */
+        align-items: center;/* me pone permite posicionar el div en el centro  */
+        margin:0;
+        padding:0;
+        border: 0 none;
+    }
+
+    .contenedor-PadrinosIglesia-Pame > .padrinosPame{
+        position: absolute;
+        display: block;
+        width: 80%;
+        top:0px;
+        height: auto;
+
+    }
+
+
+    /*padrinos Maty*/
+    .contenedor-PadrinosIglesia-Maty{
+        position: relative;
+        top:28em;
+        width: 100%;
+        height: auto;
+        float: left;
+        display: flex; /* me pone permite posicionar el div en el centro  */
+        justify-content: center;/* me pone permite posicionar el div en el centro  */
+        align-items: center;/* me pone permite posicionar el div en el centro  */
+        margin:0;
+        padding:0;
+        border: 0 none;
+    }
+
+    .contenedor-PadrinosIglesia-Maty > .padrinosMaty{
+        position: absolute;
+        display: block;
+        width: 80%;
+        height: auto;
+    }
+
+
+    .contenedor-PadrinosCivil{
+        position: relative;
+        top:39em;
+        width: 100%;
+        height: auto;
+        float: left;
+        display: flex; /* me pone permite posicionar el div en el centro  */
+        justify-content: center;/* me pone permite posicionar el div en el centro  */
+        align-items: center;/* me pone permite posicionar el div en el centro  */
+    }
+
+    .contenedor-PadrinosCivil >  .padrinosCivil{
+        position: absolute;
+        display: block;
+        width: 80%;
+        top:0px;
+        height: auto;
+    }
+
+    .contenedor-TitDamas{
+        position: relative;
+        top:55em;
+        width: 100%;
+        height: auto;
+        float: left;
+        display: flex; /* me pone permite posicionar el div en el centro  */
+        justify-content: center;/* me pone permite posicionar el div en el centro  */
+        align-items: center;/* me pone permite posicionar el div en el centro  */
+    }
+
+    .contenedor-TitDamas > .tituloDamas{
+        position: relative;
+        display: block;
+        width: 85%;
+    }
+    .contenedor-TitCab{
+        display: none; /* me pone permite posicionar el div en el centro  */
+
+    }
+
+    .contenedor-Damas{
+        position: relative;
+        top:55em;
+        width: 100%;
+        height: auto;
+        float: left;
+        display: flex; /* me pone permite posicionar el div en el centro  */
+        justify-content: center;/* me pone permite posicionar el div en el centro  */
+        align-items: center;/* me pone permite posicionar el div en el centro  */
+    }
+
+    .contenedor-Damas >  .ImgDamas{
+        position: relative;
+        display: block;
+        width: 80%;
+    }
+
+    .contenedor-TitCab2{
+        position: relative;
+        top:56em;
+        width: 100%;
+        height: auto;
+        float: left;
+        display: flex; /* me pone permite posicionar el div en el centro  */
+        justify-content: center;/* me pone permite posicionar el div en el centro  */
+        align-items: center;/* me pone permite posicionar el div en el centro  */
+    }
+
+    .contenedor-TitCab2 > .tituloCab2{
+        position: relative;
+        display: block;
+        width: 70%;
+    }
+
+    .contenedor-Cab{
+        position: relative;
+        top:56em;
+        width: 100%;
+        height: auto;
+        float: left;
+        display: flex; /* me pone permite posicionar el div en el centro  */
+        justify-content: center;/* me pone permite posicionar el div en el centro  */
+        align-items: center;/* me pone permite posicionar el div en el centro  */
+    }
+
+    .contenedor-Cab >  .ImgCab{
+        position: relative;
+        display: block;
+        width: 80%;
+
+    }
+
+}

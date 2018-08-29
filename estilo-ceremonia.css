@@ -1,0 +1,222 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22/08/2018, 19:33:22
+    Author     : Caro
+*/
+
+body {
+    background-color: #FBFBE7;
+    width: 100%;
+    overflow: scroll;
+    height: 1500px;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.background-ceremonia {
+    background-image: url(".../imagenes/agostoCere-01.png");
+    background-repeat:no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.contedorTextoCivil{
+    position: relative;
+    top:800px;
+    width: 50%;
+    background-color: transparent;
+    height: 580px;
+    float: left;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+.contedorTextoCivil > .img-TextoCivil{
+    width: 40%;
+}
+
+.contedorTextoCivil > a {
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+.contedorTextoCivil > a > .iconoMapa{
+    position: absolute;
+    bottom: 0px;
+    width: 15%;
+    display: none;
+}
+
+.contenedor-ubicacionCivil{
+    position: relative;
+    top:800px;
+    width: 50%;
+    background-color: transparent;
+    height: 580px;
+    float: right;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+.contedorTextoIglesia{
+    position: relative;
+    top:800px;
+    width: 50%;
+    background-color: transparent;
+    height: 580px;
+    float: left;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+
+}
+
+.contedorTextoIglesia > .img-TextoIglesia{
+    width: 40%; 
+}
+
+.contedorTextoIglesia > a {
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+.contedorTextoIglesia > a > .iconoMapa{
+    position: absolute;
+    bottom: 0px;
+    width: 15%;
+    display: none;
+}
+
+.contenedor-ubicacionIglesia{
+    position: relative;
+    top:800px;
+    width: 50%;
+    background-color: transparent;
+    height: 580px;
+    float: right;
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+}
+
+
+
+
+
+
+.img-CompartiTusFotos{
+    z-index: auto;
+    width:18%;
+    position: absolute;
+    top:3.5%;
+    left: 5%;
+
+}
+
+
+.espacio{
+    width: 100%;
+    height:100px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .background-ceremonia {
+    background-image: url(".../imagenes/cereResp-01.png");
+    background-repeat:no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+    
+    .img-CompartiTusFotos{
+          z-index: 1;
+        width:40%;
+        position: absolute;
+        top:1.0em;
+        left: 1.5em;
+    }
+
+    .contedorTextoCivil {
+        position:relative;
+        top:42em;
+        border: 0 none;
+        width: 100%;   
+        margin:0;
+        padding:0;
+        float:left;
+        height: 38em;
+        display: flex;/* me pone permite posicionar el div en el centroHAY QUE PONERSELO AL PADRE Y SE CENTRA EL HIJO  */
+        justify-content: center;/* me pone permite posicionar el div en el centro  */
+        align-items: center;/* me pone permite posicionar el div en el centro  */
+
+    }
+
+    .contedorTextoCivil > .img-TextoCivil {
+        position: absolute;
+        top:3em;
+        width: 65%;
+        height: auto;
+    }
+
+    .contedorTextoCivil > a > .iconoMapa{
+        display:inline-block;
+        position: absolute;
+       bottom: 2em;
+        width: 15%;
+    }
+    
+    .contenedor-ubicacionCivil{
+        display: none;
+    }
+
+    .contedorTextoIglesia{
+        position:relative;
+        top:43em;
+        border: 0 none;
+        width: 100%;   
+        margin:0;
+        padding:0;
+        float:left;
+        height: 38em;
+        display: flex;/* me pone permite posicionar el div en el centroHAY QUE PONERSELO AL PADRE Y SE CENTRA EL HIJO  */
+        justify-content: center;/* me pone permite posicionar el div en el centro  */
+        align-items: center;/* me pone permite posicionar el div en el centro  */ 
+
+    }
+
+    .contedorTextoIglesia > .img-TextoIglesia{
+         position: absolute;
+        top:3em;
+        width: 75%;
+        height: auto;
+
+    }
+
+     .contedorTextoIglesia > a > .iconoMapa{
+        display:inline-block;
+        position: absolute;
+        bottom: 5em;
+        width: 15%;
+    }
+    
+    .contenedor-ubicacionIglesia{
+        display: none; 
+    }
+
+}
+
+

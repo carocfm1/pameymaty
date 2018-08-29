@@ -1,0 +1,240 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27/08/2018, 10:14:52
+    Author     : Caro
+*/
+
+
+body {
+    background-color: #FBFBE7;
+    width: 100%;
+    overflow: scroll;
+    height: 1500px;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/*.background-fecha{
+
+    background-image: url(".../imagenes/fechaAgosto1024x768 copy.jpeg");
+    background-repeat:no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}*/
+
+.img-CompartiTusFotos{
+    z-index: 1;
+    width:18%;
+    position: absolute;
+    top:3.5%;
+    left: 5%;
+
+}
+
+
+.menu .drop svg {
+    background: rgba(0,0,0,0.5);
+    vertical-align: middle;
+}
+
+
+
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+    margin: 0;
+    padding: 0;
+    background-repeat:no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+
+.slideshow-container > .mySlides > .imgFecha{
+    background-repeat:no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.slideshow-container > .mySlides > .imgFecha2{
+    height: 100vh;
+    background-size: cover;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #FFCFCA;
+}
+
+/* Fading animation */
+.fade {
+    z-index: -1;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+.dot-nav{
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+}
+
+.imgBuscaTuFoto{
+    width: 60%;
+
+}
+
+
+/*galeria*/
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  
+        .img-CompartiTusFotos{
+        z-index: 1;
+        width:40%;
+        position: absolute;
+        top:1.0em;
+        left: 1.5em;
+    }
+
+    .slideshow-container {
+    display: flex; /* me pone permite posicionar el div en el centro  */
+    justify-content: center;/* me pone permite posicionar el div en el centro  */
+    align-items: center;/* me pone permite posicionar el div en el centro  */
+    margin: 0;
+    padding: 0;
+    background-repeat:no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+
+}
+    .slideshow-container > .mySlides > .imgFecha{
+    background-repeat:no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+}
+
+.slideshow-container > .mySlides > .imgFecha2{
+    height:50vh;
+    background-size: cover;
+}
+
+.dot-nav{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+    .imgBuscaTuFoto{
+        width: 80%;
+
+    }
+
+
+}
